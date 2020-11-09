@@ -1,1 +1,180 @@
-<p>attendance-per-dist works!</p>
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1 class="m-0 text-dark">District Attendance Record</h1>
+          </div><!-- /.col -->
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item">Attendance Record</li>
+              <li class="breadcrumb-item active">Per District</li>
+            </ol>
+          </div><!-- /.col -->
+        </div><!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+  
+    <!-- Main content -->
+    <section class="content">
+        <div class="container-fluid">  
+          <div class="row">
+            <div class="col-md-12">
+              <div class="card">
+                <div class="card-header border-success">
+                  <h5 class="card-title" style="font-weight: bolder;">Attendance Report Per District</h5>
+  
+                  <!-- <div class="card-tools">
+                    <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                      <i class="fas fa-minus"></i>
+                    </button>
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-tool dropdown-toggle" data-toggle="dropdown">
+                        <i class="fas fa-wrench"></i>
+                      </button>
+                      <div class="dropdown-menu dropdown-menu-right" role="menu">
+                        <a href="#" class="dropdown-item">Action</a>
+                        <a href="#" class="dropdown-item">Another action</a>
+                        <a href="#" class="dropdown-item">Something else here</a>
+                        <a class="dropdown-divider"></a>
+                        <a href="#" class="dropdown-item">Separated link</a>
+                      </div>
+                    </div>
+                    <button type="button" class="btn btn-tool" data-card-widget="remove">
+                      <i class="fas fa-times"></i>
+                    </button>
+                  </div> -->
+                </div>
+                <!-- /.card-header -->
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <div class="card">
+                        <div class="card-header border-info">
+                            <h3 class="col-lg-6 col-md-6 col-sm-6 col-xs-6 card-title"></h3>
+                            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" style="float: right;">
+                              <select class="form-control" id="sel1">
+                                <option>MANILA</option>
+                                <option>CENTRAL</option>
+                                <option>MM EAST</option>
+                                <option>QUEZON CITY</option>
+                              </select></div>
+                              <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2" style="float: right;">
+                                <select class="form-control" id="sel1">
+                                  <option>DAILY</option>
+                                  <option>WEEKLY</option>
+                                  <option>MONTHLY</option>
+                                </select></div>
+                        </div>
+                        <!-- /.card-header -->
+                        <div class="card-body">
+                          <table class="table table-bordered" style="text-align: center;">
+                            <thead>                  
+                              <tr>
+                                <th>Date</th>
+                                <th>Local</th>
+                                <th style="width: 300px;">No. of Attendees</th>
+                                <th>Total Expected Attendees</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>30-10-2020</td>
+                                <td>Bambang</td>
+                                <td>
+                                  1000
+                                </td>
+                                <td>
+                                  1300
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>30-10-2020</td>
+                                <td>Baseco</td>
+                                <td>
+                                  800
+                                </td>
+                                <td>
+                                  1230
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>30-10-2020</td>
+                                <td>Quiapo</td>
+                                <td>
+                                  2560
+                                </td>
+                                <td>
+                                  2405
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>30-10-2020</td>
+                                <td>Tondo</td>
+                                <td>
+                                  1850
+                                </td>
+                                <td>
+                                  2000
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <!-- /.card-body -->
+                        <div class="card-footer clearfix">
+                          <ul class="pagination pagination-sm m-0 float-right">
+                            <li class="page-item"><a class="page-link" href="#">&laquo;</a></li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">&raquo;</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <!-- /.card -->
+                    </div>
+                    <!-- /.col -->
+                  </div>
+                  <!-- /.row -->
+                </div>
+                <!-- ./card-body -->
+                <!-- <div class="card-footer"> -->
+                  <!-- <div class="row">
+                    <div class="col-sm-6 col-6">
+                      <div class="description-block border-right">
+                        <span class="description-percentage text-success"><i class="fas fa-caret-up"></i> 20%</span>
+                        <h5 class="description-header">3,000</h5>
+                        <span class="description-text">TOTAL MEMBERS</span>
+                      </div>
+                      /.description-block
+                    </div>
+                    /.col
+                    <div class="col-sm-6 col-6">
+                      <div class="description-block">
+                        <span class="description-percentage text-danger"><i class="fas fa-caret-down"></i> 18%</span>
+                        <h5 class="description-header">1200</h5>
+                        <span class="description-text">GOAL COMPLETIONS</span>
+                      </div>
+                      /.description-block
+                    </div>
+                  </div> -->
+                  <!-- /.row -->
+                <!-- </div> -->
+                <!-- /.card-footer -->
+              </div>
+              <!-- /.card -->
+            </div>
+            <!-- /.col -->
+          </div>
+          <!-- /.row -->
+        </div><!--/. container-fluid -->
+      </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+
+  
