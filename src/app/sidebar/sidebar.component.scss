@@ -1,7 +1,9 @@
-// .nav-item {
-//     color: #008641 !important;
-// }
-
-nav.sidebar .navbar-nav > li:first-child > a{ 
+[class*=sidebar-light-] .sidebar a:active {
+    color: #008641 !important;
+}
+[class*=sidebar-light-] .sidebar a:hover{
+    color: #008641 !important;
+}
+[class*=sidebar-light-] .sidebar a:focus {
     color: #008641 !important;
 }
