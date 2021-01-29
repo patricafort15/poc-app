@@ -10,6 +10,18 @@ import { AttendanceHighestComponent } from './kma/attendance-highest/attendance-
 import { UserDashboardComponent } from './kma/user-dashboard/user-dashboard.component';
 import { RegistrationComponent } from './kma/registration/registration.component';
 import { UserProfileComponent } from './kma/user-profile/user-profile.component';
+import { MainComponent } from './main/main.component';
+import { CbmsDashboardComponent } from './cbms/cbms-dashboard/cbms-dashboard.component';
+import { AnalyticsComponent } from './cbms/analytics/analytics.component';
+import { CitizenBenefitsHistoryComponent } from './cbms/citizen-benefits-history/citizen-benefits-history.component';
+import { CitizenDatabaseComponent } from './cbms/citizen-database/citizen-database.component';
+import { CitizenRegistrationComponent } from './cbms/citizen-registration/citizen-registration.component';
+import { FieldAgentViewComponent } from './cbms/field-agent-view/field-agent-view.component';
+import { HomepageComponent } from './cbms/homepage/homepage.component';
+import { HospBillAssistanceComponent } from './cbms/hosp-bill-assistance/hosp-bill-assistance.component';
+import { MedicineAssistanceComponent } from './cbms/medicine-assistance/medicine-assistance.component';
+import { MedicineInventoryComponent } from './cbms/medicine-inventory/medicine-inventory.component';
+import { PeoplesDayAssistanceComponent } from './cbms/peoples-day-assistance/peoples-day-assistance.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +32,19 @@ import { UserProfileComponent } from './kma/user-profile/user-profile.component'
     AttendanceHighestComponent,
     UserDashboardComponent,
     RegistrationComponent,
-    UserProfileComponent
+    UserProfileComponent,
+    MainComponent,
+    CbmsDashboardComponent,
+    AnalyticsComponent,
+    CitizenBenefitsHistoryComponent,
+    CitizenDatabaseComponent,
+    CitizenRegistrationComponent,
+    FieldAgentViewComponent,
+    HomepageComponent,
+    HospBillAssistanceComponent,
+    MedicineAssistanceComponent,
+    MedicineInventoryComponent,
+    PeoplesDayAssistanceComponent
   ],
   imports: [
     BrowserModule,
