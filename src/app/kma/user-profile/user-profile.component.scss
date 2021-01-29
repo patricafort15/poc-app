@@ -1,3 +1,15 @@
+[class*=sidebar-light-] .sidebar a:active {
+  color: #008641 !important;
+}
+[class*=sidebar-light-] .sidebar a:hover{
+  color: #008641 !important;
+}
+[class*=sidebar-light-] .sidebar a:focus {
+  color: #008641 !important;
+}
+
+
+
 .text {
     padding: 20px;
 }
@@ -44,3 +56,12 @@
   
 }
 
+.main-footer {
+  // background-color: #ce171f;
+  // color: white;
+  font-size: 10px;
+}
+
+a {
+  color: #ce171f;
+}

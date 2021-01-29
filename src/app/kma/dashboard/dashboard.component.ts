@@ -7,7 +7,6 @@ import { Chart } from 'node_modules/chart.js';
   styleUrls: ['./dashboard.component.scss']
 })
 export class DashboardComponent implements OnInit {
-
   constructor() { }
 
   ngOnInit() {
