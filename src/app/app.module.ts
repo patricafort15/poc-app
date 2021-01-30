@@ -30,6 +30,15 @@ import { LemDashboardComponent } from './lem/eventAdmin/lem-dashboard/lem-dashbo
 import { EventsComponent } from './lem/eventAdmin/events/events.component';
 import { SurveysComponent } from './lem/eventAdmin/surveys/surveys.component';
 import { UsersComponent } from './lem/eventAdmin/users/users.component';
+import { VoterMgmtDashboardComponent } from './vms/voter-mgmt-dashboard/voter-mgmt-dashboard.component';
+import { VoterListComponent } from './vms/voter-list/voter-list.component';
+import { SortDirective } from './sort.directive';
+import { VoterReportComponent } from './vms/voter-report/voter-report.component';
+import { MktgCampaignComponent } from './vms/mktg-campaign/mktg-campaign.component';
+import { VendorDashboardComponent } from './vms/vendor-dashboard/vendor-dashboard.component';
+import { VendorTrackerComponent } from './vms/vendor-tracker/vendor-tracker.component';
+import { DonationTrackerComponent } from './vms/donation-tracker/donation-tracker.component';
+import { LetterSampleComponent } from './vms/letter-sample/letter-sample.component';
 
 @NgModule({
   declarations: [
@@ -60,7 +69,16 @@ import { UsersComponent } from './lem/eventAdmin/users/users.component';
     LemDashboardComponent,
     EventsComponent,
     SurveysComponent,
-    UsersComponent
+    UsersComponent,
+    VoterMgmtDashboardComponent,
+    VoterListComponent,
+    SortDirective,
+    VoterReportComponent,
+    MktgCampaignComponent,
+    VendorDashboardComponent,
+    VendorTrackerComponent,
+    DonationTrackerComponent,
+    LetterSampleComponent
   ],
   imports: [
     BrowserModule,

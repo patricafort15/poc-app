@@ -27,12 +27,21 @@ import { CodesComponent } from './lem/eventAdmin/codes/codes.component';
 import { EventsComponent } from './lem/eventAdmin/events/events.component';
 import { SurveysComponent } from './lem/eventAdmin/surveys/surveys.component';
 import { UsersComponent } from './lem/eventAdmin/users/users.component';
-
+import { VoterMgmtDashboardComponent } from './vms/voter-mgmt-dashboard/voter-mgmt-dashboard.component';
+import { VoterListComponent } from './vms/voter-list/voter-list.component';
+import { VoterReportComponent } from './vms/voter-report/voter-report.component';
+import { MktgCampaignComponent } from './vms/mktg-campaign/mktg-campaign.component'; 
+import { VendorDashboardComponent } from './vms/vendor-dashboard/vendor-dashboard.component';
+import { VendorTrackerComponent } from './vms/vendor-tracker/vendor-tracker.component';
+import { DonationTrackerComponent } from './vms/donation-tracker/donation-tracker.component';
+import { LetterSampleComponent } from './vms/letter-sample/letter-sample.component';
+ 
 const routes: Routes = [
   { path: '', redirectTo:'main', pathMatch: 'full' },
   { path: 'main', component: MainComponent},
 
   //KMA
+  { path: 'kma', component: DashboardComponent },
   { path: 'kma/dashboard', component: DashboardComponent },
   { path: 'kma/attendance-per-dist', component: AttendancePerDistComponent },
   { path: 'kma/attendance-per-local', component: AttendancePerLocalComponent },
@@ -42,6 +51,7 @@ const routes: Routes = [
   { path: 'kma/user-profile', component: UserProfileComponent },
 
   //CBMS
+  { path: 'cbms', component: CbmsDashboardComponent},
   { path: 'cbms/cbms-dashboard', component: CbmsDashboardComponent},
   { path: 'cbms/analytics', component: AnalyticsComponent},
   { path: 'cbms/citizen-benefits-history', component: CitizenBenefitsHistoryComponent},
@@ -55,6 +65,7 @@ const routes: Routes = [
   { path: 'cbms/peoples-day-assistance', component: PeoplesDayAssistanceComponent},
 
   //LEM
+  { path: 'lem', component: LandingPageComponent},
   { path: 'lem/event/landing-page', component: LandingPageComponent},
   { path: 'lem/event/lem-registration', component: LemRegistrationComponent},
   { path: 'lem/event/main-event', component: MainEventComponent},
@@ -62,8 +73,18 @@ const routes: Routes = [
   { path: 'lem/eventAdmin/codes', component: CodesComponent},
   { path: 'lem/eventAdmin/events', component: EventsComponent},
   { path: 'lem/eventAdmin/surveys', component: SurveysComponent},
-  { path: 'lem/eventAdmin/users', component: UsersComponent}
+  { path: 'lem/eventAdmin/users', component: UsersComponent},
 
+  //VMS
+  { path: 'vms', component: VoterMgmtDashboardComponent},
+  { path: 'vms/voter-mgmt-dashboard', component: VoterMgmtDashboardComponent},
+  { path: 'vms/voter-list', component: VoterListComponent},
+  { path: 'vms/voter-report', component: VoterReportComponent},
+  { path: 'vms/mktg-campaign', component: MktgCampaignComponent},
+  { path: 'vms/vendor-dashboard', component: VendorDashboardComponent},
+  { path: 'vms/vendor-tracker', component: VendorTrackerComponent},
+  { path: 'vms/donation-tracker', component: DonationTrackerComponent},
+  { path: 'vms/letter-sample', component: LetterSampleComponent}
 ];
 
 @NgModule({
