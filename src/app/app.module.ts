@@ -22,6 +22,14 @@ import { HospBillAssistanceComponent } from './cbms/hosp-bill-assistance/hosp-bi
 import { MedicineAssistanceComponent } from './cbms/medicine-assistance/medicine-assistance.component';
 import { MedicineInventoryComponent } from './cbms/medicine-inventory/medicine-inventory.component';
 import { PeoplesDayAssistanceComponent } from './cbms/peoples-day-assistance/peoples-day-assistance.component';
+import { LandingPageComponent } from './lem/event/landing-page/landing-page.component';
+import { MainEventComponent } from './lem/event/main-event/main-event.component';
+import { LemRegistrationComponent } from './lem/event/lem-registration/lem-registration.component';
+import { CodesComponent } from './lem/eventAdmin/codes/codes.component';
+import { LemDashboardComponent } from './lem/eventAdmin/lem-dashboard/lem-dashboard.component';
+import { EventsComponent } from './lem/eventAdmin/events/events.component';
+import { SurveysComponent } from './lem/eventAdmin/surveys/surveys.component';
+import { UsersComponent } from './lem/eventAdmin/users/users.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +52,15 @@ import { PeoplesDayAssistanceComponent } from './cbms/peoples-day-assistance/peo
     HospBillAssistanceComponent,
     MedicineAssistanceComponent,
     MedicineInventoryComponent,
-    PeoplesDayAssistanceComponent
+    PeoplesDayAssistanceComponent,
+    LandingPageComponent,
+    MainEventComponent,
+    LemRegistrationComponent,
+    CodesComponent,
+    LemDashboardComponent,
+    EventsComponent,
+    SurveysComponent,
+    UsersComponent
   ],
   imports: [
     BrowserModule,

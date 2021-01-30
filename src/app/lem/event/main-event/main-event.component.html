@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+   
+    <section class="banner-area">
+        <div class="container-fluid">
+          <!-- Small boxes (Stat box) -->
+          <!-- /.row -->
+          <!-- Main row -->
+          <div class="row">
+            
+            <!-- Left col -->
+            <section class="col-lg-9">
+                <div class="text-container">
+                    <h1>YEAR END PARTY EVENT</h1>  
+                    
+                </div>
+
+                <div class="row">
+                  <div class="col-md-12">
+                    <div id="container" class="row">
+                      <button  id="panel" type="button" class="btn btn-info btn-block" data-toggle="modal" data-target="#liveModal">Live Broadcast</button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div id="container" class="row">
+                            <button  id="panel" type="button" class="btn btn-info btn-block" data-toggle="modal" data-target="#pboothModal">Photobooth</button>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div id="container" class="row">
+                            <button  id="panel" type="button" class="btn btn-info btn-block" data-toggle="modal" data-target="#gameModal">Games</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <span style="padding-left: 50px; padding-top: 100px;"><button type="button" class="btn btn-info "  href="lem/eventAdmin/lem-dashboard">Go to Event Admin</button></span>
+                </div>
+
+        
+
+                <div class="modal fade" id="gameModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-notify modal-warning modal-lg" role="document">
+                        <!--Content-->
+                        <div class="modal-content">
+                        <!--Header-->
+                        <div class="modal-header text-center">
+                            <h4 class="modal-title white-text w-100 font-weight-bold py-2">GAME</h4>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                        </div>
+        
+                        <!--Body-->
+                        <div class="modal-body text-center">
+                            <img class="image" src="/assets/img/game.png"> 
+                        </div>
+        
+                        <!--Footer-->
+                        <!-- <div class="modal-footer justify-content-center">
+                            
+                        </div> -->
+                        </div>
+                        <!--/.Content-->
+                    </div>
+                </div>
+
+                <div class="modal fade" id="pboothModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-notify modal-warning modal-lg" role="document">
+                        <!--Content-->
+                        <div class="modal-content">
+                        <!--Header-->
+                        <div class="modal-header text-center">
+                            <h4 class="modal-title white-text w-100 font-weight-bold py-2">PHOTOBOOTH</h4>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                        </div>
+        
+                        <!--Body-->
+                        <div class="modal-body text-center">
+                            <img class="image" src="/assets/img/photobooth.png">
+                        </div>
+        
+                        <!--Footer-->
+                        <!-- <div class="modal-footer justify-content-center">
+                            
+                        </div> -->
+                        </div>
+                        <!--/.Content-->
+                    </div>
+                </div>
+
+                <div class="modal fade" id="liveModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-notify modal-warning modal-lg" role="document">
+                      <!--Content-->
+                      <div class="modal-content">
+                      <!--Header-->
+                      <div class="modal-header text-center">
+                          <h4 class="modal-title white-text w-100 font-weight-bold py-2">LIVE</h4>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                      </div>
+      
+                      <!--Body-->
+                      <div class="modal-body text-center">
+                        <iframe  src="https://www.youtube.com/embed/3GwjfUFyY6M?&autoplay=1&showinfo=0&controls=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                      </div>
+      
+                      <!--Footer-->
+                      <!-- <div class="modal-footer justify-content-center">
+                          
+                      </div> -->
+                      </div>
+                      <!--/.Content-->
+                  </div>
+              </div>
+
+            </section>
+            <!-- /.Left col -->
+            <!-- right col (We are only adding the ID to make the widgets sortable)-->
+            <section class="col-lg-3 nopadding">
+                 <!-- DIRECT CHAT -->
+              <div class="card direct-chat direct-chat-primary">
+                <div class="card-header">
+                  <h3 class="card-title">Chat</h3>
+  
+                  <div class="card-tools">
+                    <!-- <span data-toggle="tooltip" title="3 New Messages" class="badge badge-warning">3</span> -->
+                    <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                      <i class="fas fa-minus"></i>
+                    </button>
+                  </div>
+                </div>
+                <!-- /.card-header -->
+                <div class="card-body">
+                  <!-- Conversations are loaded here -->
+                  <div class="direct-chat-messages">
+                    <!-- Message. Default to the left -->
+                    <div class="direct-chat-msg">
+                      <div class="direct-chat-infos clearfix">
+                        <span class="direct-chat-name float-left">Gab Benedicto</span>
+                        <span class="direct-chat-timestamp float-right">23 Jan 2:00 pm</span>
+                      </div>
+                      <!-- /.direct-chat-infos -->
+                      <img class="direct-chat-img" src="assets/img/superman.png" alt="message user image">
+                      <!-- /.direct-chat-img -->
+                      <div class="direct-chat-text">
+                        Hey, thanks again for the help today!
+                      </div>
+                      <!-- /.direct-chat-text -->
+                    </div>
+                    <!-- /.direct-chat-msg -->
+  
+                    <!-- Message to the right -->
+                    <div class="direct-chat-msg right">
+                      <div class="direct-chat-infos clearfix">
+                        <span class="direct-chat-name float-right">Anelle Silerio</span>
+                        <span class="direct-chat-timestamp float-left">23 Jan 2:05 pm</span>
+                      </div>
+                      <!-- /.direct-chat-infos -->
+                      <img class="direct-chat-img" src="assets/img/wonderwoman.jpg" alt="message user image">
+                      <!-- /.direct-chat-img -->
+                      <div class="direct-chat-text">
+                        No problem! I'm happy to help!
+                      </div>
+                      <!-- /.direct-chat-text -->
+                    </div>
+                    <!-- /.direct-chat-msg -->
+  
+                    <!-- Message. Default to the left -->
+                    <div class="direct-chat-msg">
+                      <div class="direct-chat-infos clearfix">
+                        <span class="direct-chat-name float-left">Gab Benedicto</span>
+                        <span class="direct-chat-timestamp float-right">23 Jan 5:37 pm</span>
+                      </div>
+                      <!-- /.direct-chat-infos -->
+                      <img class="direct-chat-img" src="assets/img/superman.png" alt="message user image">
+                      <!-- /.direct-chat-img -->
+                      <div class="direct-chat-text">
+                        My colleagues liked the design, would you like to be part of our next project?
+                      </div>
+                      <!-- /.direct-chat-text -->
+                    </div>
+                    <!-- /.direct-chat-msg -->
+  
+                    <!-- Message to the right -->
+                    <div class="direct-chat-msg right">
+                      <div class="direct-chat-infos clearfix">
+                        <span class="direct-chat-name float-right">Anelle Silerio</span>
+                        <span class="direct-chat-timestamp float-left">23 Jan 6:10 pm</span>
+                      </div>
+                      <!-- /.direct-chat-infos -->
+                      <img class="direct-chat-img" src="assets/img/wonderwoman.jpg" alt="message user image">
+                      <!-- /.direct-chat-img -->
+                      <div class="direct-chat-text">
+                        I would love to!
+                      </div>
+                      <!-- /.direct-chat-text -->
+                    </div>
+                    <!-- /.direct-chat-msg -->
+
+                    <!-- Message. Default to the left -->
+                    <div class="direct-chat-msg">
+                        <div class="direct-chat-infos clearfix">
+                          <span class="direct-chat-name float-left">Gab Benedicto</span>
+                          <span class="direct-chat-timestamp float-right">23 Jan 5:37 pm</span>
+                        </div>
+                        <!-- /.direct-chat-infos -->
+                        <img class="direct-chat-img" src="assets/img/superman.png" alt="message user image">
+                        <!-- /.direct-chat-img -->
+                        <div class="direct-chat-text">
+                          Great! I'll let them know.
+                        </div>
+                        <!-- /.direct-chat-text -->
+                      </div>
+                      <!-- /.direct-chat-msg -->
+
+                     <!-- Message to the right -->
+                    <div class="direct-chat-msg right">
+                      <div class="direct-chat-infos clearfix">
+                        <span class="direct-chat-name float-right">Anelle Silerio</span>
+                        <span class="direct-chat-timestamp float-left">23 Jan 6:10 pm</span>
+                      </div>
+                      <!-- /.direct-chat-infos -->
+                      <img class="direct-chat-img" src="assets/img/wonderwoman.jpg" alt="message user image">
+                      <!-- /.direct-chat-img -->
+                      <div class="direct-chat-text">
+                        Thanks!
+                      </div>
+                      <!-- /.direct-chat-text -->
+                    </div>
+                    <!-- /.direct-chat-msg -->
+                    
+  
+                  </div>
+                  <!--/.direct-chat-messages-->
+
+                  <!-- /.direct-chat-pane -->
+                </div>
+                <!-- /.card-body -->
+                <div class="card-footer">
+                  <form action="#" method="post">
+                    <div class="input-group">
+                      <input type="text" name="message" placeholder="Type Message ..." class="form-control">
+                      <span class="input-group-append">
+                        <button type="button" class="btn btn-primary">Send</button>
+                      </span>
+                    </div>
+                  </form>
+                </div>
+                <!-- /.card-footer-->
+              </div>
+              <!--/.direct-chat -->
+            </section>
+            <!-- right col -->
+          </div>
+          <!-- /.row (main row) -->
+        </div><!-- /.container-fluid -->
+      </section>
+    
+
+</body>
+</html>

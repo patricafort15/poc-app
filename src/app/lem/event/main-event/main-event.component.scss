@@ -1,0 +1,128 @@
+@import url(https://fonts.googleapis.com/css?family=Righteous);
+$desktop: 1200px;
+$laptop: 1024px;
+$tablet: 768px;
+$phone: 480px;
+
+
+body{
+    background:#eee;
+    font-family:sans-serif;
+    overflow: auto;
+    margin-left: 0px;
+}
+        
+.banner-area{
+    width:100%;
+    height:100vh;
+    background-image: url(/assets/img/landing-page.png);
+    background-size: cover;
+    background-repeat: repeat;
+    @media (max-width: $phone) {
+        max-height: auto;
+        background-image: url(/assets/img/landing-page.png);
+        max-height: auto;
+        background-image: url(/assets/img/landing-page.png);
+        background-size: cover;
+        --webkit-background-size: cover;
+        --moz-background-size: cover;
+        --o-background-size: cover;
+    }
+}        
+
+.text-container {
+    max-width: 100%;
+    height: 100px;
+    position: relative;
+    padding-top: 1%;
+    padding-left: 10%;
+    // top: 12.5em;
+    // left: 4.375em;
+   }
+   
+   h1 {
+    font-family: 'Righteous', serif;
+    color: #fff;
+    font-size: 50px;
+    text-shadow: 10px 10px 4px rgba(0, 0, 0, 0.1);
+    text-transform: uppercase;
+   }
+
+#panel {
+    height: 120px;
+    margin-top: 10px;
+    font-size: 22px;
+}
+
+iframe {
+    width: 760px;
+    height: 500px;
+    @media (max-width: $laptop){
+        height: 300px;
+        width: 430px;
+    }
+    @media (max-width: $phone){
+        height: 158px;
+        width: 280px;
+    }
+}
+
+
+#container {
+    margin: 20px 20px 20px 20px;
+}
+section .col-lg-3 {
+    height: 100%;
+}
+
+.nopadding {
+    padding: 0 !important;
+    margin: 0 !important;
+ }
+
+.direct-chat {
+    position: fixed;
+    max-width: 100%;
+    bottom: 0px;
+    overflow: hidden;
+    max-height: 100%;
+    margin: 0px;
+    margin-left: 0px;
+    @media (max-width: $laptop){
+        width: 100%;
+        column-fill: auto;
+        margin: 0px;
+        max-height: 43%;
+        margin-left: 0px;
+    }
+    @media (min-width: $laptop){
+        width: 25%;
+        margin: 0px;
+        max-height: 100%;
+        margin-left: 0px;
+    }
+}
+
+
+
+.direct-chat-messages {
+    height: 564px;
+    overflow: auto;
+}
+
+.image {
+    height: 400px; 
+    width: auto;
+    @media (max-width: $laptop){
+        height: 200px;
+    }
+    @media (max-width: $phone){
+        height: 100px;
+    }
+}
+
+
+
+    
+
+        
