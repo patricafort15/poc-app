@@ -167,7 +167,6 @@
               </p>
             </a>
           </li>
-          
         </ul>
       </nav>
       <!-- /.sidebar-menu -->
@@ -180,90 +179,114 @@
     <!-- Content Header (Page header) -->
     <div class="content-header">
       <div class="container-fluid">
-        <div class="row mb-2">
+        <!-- <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0 text-dark">Finance Dashboard</h1>
-          </div><!-- /.col -->
+            <h1 class="m-0 text-dark">Hi Field Agent!</h1>
+          </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">Vendor Management</a></li>
-              <li class="breadcrumb-item active">Finance Dashboard</li>
             </ol>
-          </div><!-- /.col -->
-        </div><!-- /.row -->
-      </div><!-- /.container-fluid -->
+          </div>
+        </div> -->
+      </div>
     </div>
     <!-- /.content-header -->
   
     <!-- Main content -->
-    <section class="content">
-        <div class="container-fluid">
-          <!-- Info boxes -->
-          <div class="row">
-            <div class="col-lg-4 col-xs-4">
-              <!-- small box -->
-              <div class="small-box bg-yellow-top">
-                <div class="inner">
-                  <h3>P 1,000,000</h3>
-                  <h5>Total Budget for Allocation</h5>
-    
-                  <p>Campaign 2021</p>
-                </div>
-                <div class="icon">
-                  <i class="ion ion-person-add"></i>
-                </div>
-                <a href="/voter-list" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+    <div class="content">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="card">
+              <div class="card-header">
+                <h5 class="m-0">Voter Information</h5>
               </div>
-            </div>
-            <!-- ./col -->
-          </div>
-          <!-- /.row -->
-           <!-- Info boxes -->
-           <div class="row">
-            <div class="col-lg-6 col-xs-6">
-              <!-- small box -->
-              <div class="small-box bg-registration">
-                <div class="inner">
-                  <!-- <h3>44</h3>
-    
-                  <p>User Registrations</p> -->
-                  <div class="card-body">
-                    <canvas id="mypieChart" ></canvas>
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-sm-6">
+                        <img class="avatar" src="assets/img/avatar5.png">
+                  </div>
+                  <div class=" col-sm-6">
+                      
+                      <img class="qr" src="assets/img/frame.png">
                   </div>
                 </div>
-                <div class="icon">
-                  <i class="ion ion-person-add"></i>
+                <div class="row">
+                  <table id="users">
+                    <tr>
+                      <th>Name:</th>
+                      <td>Juan Dela Cruz</td>
+                    </tr>
+                    <tr>
+                      <th>User ID:</th>
+                      <td>00001456</td>
+                    </tr>
+                    <tr>
+                      <th>Address:</th>
+                      <td>Brgy. Batasan Hills, Quezon City</td>
+                    </tr>
+                    <tr>
+                      <th>Contact Num:</th>
+                      <td>555 77 855</td>
+                    </tr>
+                    <tr>
+                      <th>Status:</th>
+                      <td></td>
+                    </tr>
+                  </table>
                 </div>
-                <a class="small-box-footer blue">More info <i class="fa fa-arrow-circle-right"></i></a>
+
               </div>
             </div>
-            <!-- ./col -->
-            <div class="col-lg-6 col-xs-6">
-              <!-- small box -->
-              <div class="small-box bg-red">
-                <div class="inner">
-                  <div class="card-body">
-                    <canvas id="agePieChart" ></canvas>
-                  </div>
-                </div>
-                <div class="icon">
-                  <i class="ion ion-pie-graph"></i>
-                </div>
-                <a class="small-box-footer blue">More info <i class="fa fa-arrow-circle-right"></i></a>
-              </div>
-            </div>
-            <!-- ./col -->
           </div>
-          <!-- /.row -->
-           
-  
-        
-        </div><!--/. container-fluid -->
-      </section>
+          <!-- /.col-md-6 -->
+
+          <div class="col-lg-6">
+            <div class="card">
+              <div class="card-header">
+                <h5 class="m-0">MENU</h5>
+              </div>
+
+              <div class="card-body">
+
+               <div id="container" class="row">
+                <div class="col-sm-6">
+                  <button  id="panel" type="button" class="btn btn-info btn-block">Medicine 1</button>
+                </div>
+                <div class="col-sm-6">
+                  <button  id="panel" type="button" class="btn btn-info btn-block">Medicine 2</button>
+                </div>
+               </div>
+
+               <div id="container" class="row">
+                <div class="col-sm-6">
+                  <button  id="panel" type="button" class="btn btn-success btn-block">Benefit 1</button>
+                </div>
+                <div class="col-sm-6">
+                  <button  id="panel" type="button" class="btn btn-success btn-block">Benefit 2</button>
+                </div>
+               </div>
+
+               <div id="container" class="row">
+                <div class="col-sm-6">
+                  <button  id="panel" type="button" class="btn btn-warning btn-block">Others 1</button>
+                </div>
+                <div class="col-sm-6">
+                  <button id="panel" type="button" class="btn btn-warning btn-block">Others 2</button>
+                </div>
+               </div>
+
+              </div>
+            </div>
+          </div>
+          <!-- /.col-md-6 -->
+        </div>
+        <!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div>
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
-
 
 
 <!-- Main Footer -->

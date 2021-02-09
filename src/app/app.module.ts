@@ -39,6 +39,7 @@ import { VendorDashboardComponent } from './vms/vendor-dashboard/vendor-dashboar
 import { VendorTrackerComponent } from './vms/vendor-tracker/vendor-tracker.component';
 import { DonationTrackerComponent } from './vms/donation-tracker/donation-tracker.component';
 import { LetterSampleComponent } from './vms/letter-sample/letter-sample.component';
+import { VmsProfileComponent } from './vms/vms-profile/vms-profile.component';
 
 @NgModule({
   declarations: [
@@ -78,7 +79,8 @@ import { LetterSampleComponent } from './vms/letter-sample/letter-sample.compone
     VendorDashboardComponent,
     VendorTrackerComponent,
     DonationTrackerComponent,
-    LetterSampleComponent
+    LetterSampleComponent,
+    VmsProfileComponent
   ],
   imports: [
     BrowserModule,

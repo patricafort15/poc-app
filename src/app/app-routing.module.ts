@@ -35,6 +35,7 @@ import { VendorDashboardComponent } from './vms/vendor-dashboard/vendor-dashboar
 import { VendorTrackerComponent } from './vms/vendor-tracker/vendor-tracker.component';
 import { DonationTrackerComponent } from './vms/donation-tracker/donation-tracker.component';
 import { LetterSampleComponent } from './vms/letter-sample/letter-sample.component';
+import { VmsProfileComponent } from './vms/vms-profile/vms-profile.component';
  
 const routes: Routes = [
   { path: '', redirectTo:'main', pathMatch: 'full' },
@@ -84,7 +85,8 @@ const routes: Routes = [
   { path: 'vms/vendor-dashboard', component: VendorDashboardComponent},
   { path: 'vms/vendor-tracker', component: VendorTrackerComponent},
   { path: 'vms/donation-tracker', component: DonationTrackerComponent},
-  { path: 'vms/letter-sample', component: LetterSampleComponent}
+  { path: 'vms/letter-sample', component: LetterSampleComponent},
+  { path: 'vms/vms-profile', component: VmsProfileComponent }
 ];
 
 @NgModule({
