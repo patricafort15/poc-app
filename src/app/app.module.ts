@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { GrdFilterPipe } from './vms/voter-list/voter.pipe'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -45,6 +46,7 @@ import { VmsProfileComponent } from './vms/vms-profile/vms-profile.component';
   declarations: [
     AppComponent,
     DashboardComponent,
+    GrdFilterPipe,
     AttendancePerDistComponent,
     AttendancePerLocalComponent,
     AttendanceHighestComponent,
