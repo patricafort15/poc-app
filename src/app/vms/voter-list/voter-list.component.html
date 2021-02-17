@@ -214,28 +214,33 @@
                             </div>
                             <!-- /.card-header -->
                             <div class="card-body">
+                              <input [(ngModel)]="searchText" placeholder="Search" class="advancedSearchTextbox">
                               <table class="table table-bordered" style="text-align: center;">
                                 <thead>                  
                                   <tr>
-                                    <th scope="col" [appSort]="voterList" data-order="desc" data-name="id">ID <i class="fas fa-sort"></i></th>
-                                    <th scope="col" [appSort]="voterList" data-order="desc" data-name="name">Name <i class="fas fa-sort"></i></th>
-                                    <th scope="col" [appSort]="voterList" data-order="desc" data-name="status">Status <i class="fas fa-sort"></i></th>
-                                    <th scope="col" [appSort]="voterList" data-order="desc" data-name="age">Age <i class="fas fa-sort"></i></th>
-                                    <th scope="col" [appSort]="voterList" data-order="desc" data-name="gender">Gender <i class="fas fa-sort"></i></th>
-                                    <th scope="col" [appSort]="voterList" data-order="desc" data-name="barangay">Barangay <i class="fas fa-sort"></i></th>
-                                    <th scope="col" [appSort]="voterList" data-order="desc" data-name="rating">Rating <i class="fas fa-sort"></i></th>
+                                    <th scope="col">ID</th>
+                                    <th scope="col">Clustered Precint</th>
+                                    <th scope="col">Established Precint</th>
+                                    <th scope="col">Polling Place</th>
+                                    <th scope="col">Name</th>
+                                    <th scope="col">Address</th>
+                                    <th scope="col">Age</th>
+                                    <th scope="col">Registered Voter?</th>
+                                    <th scope="col">Supporter?</th>
                                     <th scope="col">Send a Letter</th>
                                   </tr>
                                 </thead>
                                 <tbody>
-                                  <tr *ngFor="let voter of voterList">
+                                  <tr *ngFor="let voter of voterList | grdFilter: {name: searchText}; let i=index;">
                                     <td>{{ voter.id }}</td>
-                                    <td>{{ voter.name }}</td>
-                                    <td>{{ voter.status }}</td>
+                                    <td>{{ voter.clusteredPrecint }}</td>
+                                    <td>{{ voter.establishedPrecint }}</td>
+                                    <td>{{ voter.pollingPlace}}</td>
+                                    <td>{{ voter.lastName }}, {{ voter.firstName }} {{ voter.middleName }}</td>
+                                    <td>{{ voter.address }}</td>
                                     <td>{{ voter.age }}</td>
-                                    <td>{{ voter.gender }}</td>
-                                    <td>{{ voter.barangay }}</td>
-                                    <td>{{ voter.rating }}</td>
+                                    <td>{{ voter.registeredVoter }}</td>
+                                    <td>{{ voter.inFavor }}</td>
                                     <td><a href="vms/letter-sample"><button type="button" class="btn btn-info">Send Letter</button></a></td>
                                   </tr>
                                 </tbody>
