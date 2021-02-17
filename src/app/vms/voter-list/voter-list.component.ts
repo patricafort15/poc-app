@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Chart } from 'node_modules/chart.js';
 import { StringifyOptions } from 'querystring';
+import { setSyntheticTrailingComments, StringLiteralLike } from 'typescript';
 
 @Component({
   selector: 'app-voter-list',
@@ -9,72 +10,193 @@ import { StringifyOptions } from 'querystring';
 })
 export class VoterListComponent implements OnInit {
 
+  public searchText : string;
+  public voterList : any;
+
   constructor() { 
     console.log(this.voterList);
   }
 
-
   ngOnInit(): void {
+
+    this.voterList = [
+      {
+        "id":  '001',
+        "clusteredPrecint": 1,
+        "establishedPrecint": '001A',
+        "pollingPlace": 'BUENA PARK UNIVERSITY HILLS, CALOOCAN CITY',
+        "lastName": 'ACADEMIA',
+        "firstName": 'SHERYL',
+        "middleName": 'CRUZ',
+        "age": '30',
+        "registeredVoter": 'Y',
+        "inFavor": 'Y',
+        "address": '50 ONRUBIA ST. BISIG NG KABATAAN SANGANDAAN'
+      },
+      {
+        "id":  '002',
+        "clusteredPrecint": 1,
+        "establishedPrecint": '001A',
+        "pollingPlace": 'BUENA PARK UNIVERSITY HILLS, CALOOCAN CITY',
+        "lastName": 'ALDUESO',
+        "firstName": 'LEONORA',
+        "middleName": 'LAMAYO',
+        "age": 'SENIOR CITIZEN',
+        "registeredVoter": 'Y',
+        "inFavor": 'Y',
+        "address": '95 GEN SAN MIGUEL SANGANDAAN'
+      },
+      {
+        "id":  '003',
+        "clusteredPrecint": 1,
+        "establishedPrecint": '001A',
+        "pollingPlace": 'BUENA PARK UNIVERSITY HILLS, CALOOCAN CITY',
+        "lastName": 'ALEJANDRO',
+        "firstName": 'JEROME',
+        "middleName": 'GIRON',
+        "age": '24',
+        "registeredVoter": 'Y',
+        "inFavor": 'Y',
+        "address": '69 LA TORRE ST. BNK SANGANDAAN'
+      },
+      {
+        "id":  '101',
+        "clusteredPrecint": 1,
+        "establishedPrecint": '001B',
+        "pollingPlace": 'BUENA PARK UNIVERSITY HILLS, CALOOCAN CITY',
+        "lastName": 'FONSECA',
+        "firstName": 'ARTHUR',
+        "middleName": 'MORELOS',
+        "age": 'SENIOR CITIZEN',
+        "registeredVoter": 'Y',
+        "inFavor": 'N',
+        "address": 'SANGANDAAN'
+      },
+      {
+        "id":  '102',
+        "clusteredPrecint": 1,
+        "establishedPrecint": '001B',
+        "pollingPlace": 'BUENA PARK UNIVERSITY HILLS, CALOOCAN CITY',
+        "lastName": 'IGNACIO',
+        "firstName": 'MAMERTO',
+        "middleName": 'MENDOZA',
+        "age": 'SENIOR CITIZEN',
+        "registeredVoter": 'Y',
+        "inFavor": 'N',
+        "address": '42 PABLO ST. BISIG NG KABATAAN'
+      },
+      {
+        "id":  '103',
+        "clusteredPrecint": 1,
+        "establishedPrecint": '001B',
+        "pollingPlace": 'BUENA PARK UNIVERSITY HILLS, CALOOCAN CITY',
+        "lastName": 'ISMAEL',
+        "firstName": 'CRISTINA',
+        "middleName": 'BORJA',
+        "age": '32',
+        "registeredVoter": 'Y',
+        "inFavor": 'Y',
+        "address": '64 MARCOS STREET BISIG NG KABATAAN SANGANDAAN'
+      },
+      {
+        "id":  '501',
+        "clusteredPrecint": 3,
+        "establishedPrecint": '011A',
+        "pollingPlace": 'BUENA PARK UNIVERSITY HILLS, CALOOCAN CITY',
+        "lastName": 'CERVANTES',
+        "firstName": 'RUEL',
+        "middleName": 'BOLANTE',
+        "age": '32',
+        "registeredVoter": 'Y',
+        "inFavor": 'N',
+        "address": '256 DIZON ST BNK SANGANDAAN'
+      },
+      {
+        "id":  '502',
+        "clusteredPrecint": 3,
+        "establishedPrecint": '011A',
+        "pollingPlace": 'BUENA PARK UNIVERSITY HILLS, CALOOCAN CITY',
+        "lastName": 'CIRUELA',
+        "firstName": 'MINA',
+        "middleName": 'RAMIREZ',
+        "age": '25',
+        "registeredVoter": 'Y',
+        "inFavor": 'Y',
+        "address": '135 VILLA MARIA ST SANGANDAAN'
+      },
+      {
+        "id":  '503',
+        "clusteredPrecint": 3,
+        "establishedPrecint": '011A',
+        "pollingPlace": 'BUENA PARK UNIVERSITY HILLS, CALOOCAN CITY',
+        "lastName": 'CORNEJO',
+        "firstName": 'LUZVIMINDA',
+        "middleName": 'REYES',
+        "age": 'SENIOR CITIZEN',
+        "registeredVoter": 'Y',
+        "inFavor": 'Y',
+        "address": '408 VILLA MARIA ST. SANGANDAAN'
+      },
+      {
+        "id":  '121',
+        "clusteredPrecint": 3,
+        "establishedPrecint": '012A',
+        "pollingPlace": 'BUENA PARK UNIVERSITY HILLS, CALOOCAN CITY',
+        "lastName": 'REGUALOS',
+        "firstName": 'AIRA',
+        "middleName": 'BALINGIT',
+        "age": '42',
+        "registeredVoter": 'Y',
+        "inFavor": 'Y',
+        "address": '217 FUENTES ST BISIG NG KABATAAN, SANGANDAAN'
+      },
+      {
+        "id":  '122',
+        "clusteredPrecint": 3,
+        "establishedPrecint": '012A',
+        "pollingPlace": 'BUENA PARK UNIVERSITY HILLS, CALOOCAN CITY',
+        "lastName": 'RIOS',
+        "firstName": 'CONSOLACION',
+        "middleName": 'ZAFRA',
+        "age": 'SENIOR CITIZEN',
+        "registeredVoter": 'Y',
+        "inFavor": 'Y',
+        "address": '193 SITIO 1 SANGANDAAN'
+      },
+      {
+        "id":  '123',
+        "clusteredPrecint": 3,
+        "establishedPrecint": '012A',
+        "pollingPlace": 'BUENA PARK UNIVERSITY HILLS, CALOOCAN CITY',
+        "lastName": 'ROCERO',
+        "firstName": 'RUBELYN',
+        "middleName": 'BALAGA',
+        "age": '42',
+        "registeredVoter": 'Y',
+        "inFavor": 'N',
+        "address": '132 VILLA MARIA ST SANGANDAAN'
+      }
+
+    ]
 
     
   }
 
-  public voterList: Array<VoterData> = [
-    {
-      id: 1001,
-      status: 'Registered',
-      name: 'Juan Dela Cruz',
-      age: 35,
-      gender: 'M',
-      barangay: 'Talon Uno',
-      rating: 3.9
-    },
-    {
-      id: 1002,
-      status: 'Unregistered',
-      name: 'Ernesto Baluyot',
-      age: 25,
-      gender: 'M',
-      barangay: 'Talon Uno',
-      rating: 3.2
-    },
-    {
-      id: 1087,
-      status: 'Registered to another brgy.',
-      name: 'Juanita Santos',
-      age: 51,
-      gender: 'F',
-      barangay: 'Pilar',
-      rating: 2.4
-    },
-    {
-      id: 1024,
-      status: 'Registered',
-      name: 'Julian Molino',
-      age: 31,
-      gender: 'M',
-      barangay: 'Talon Uno',
-      rating: 3.9
-    },
-    {
-      id: 1921,
-      status: 'Unregistered',
-      name: 'Conchita Villaluz',
-      age: 43,
-      gender: 'F',
-      barangay: 'Pilar',
-      rating: 4.1
-    }
-  ]
+  // public voterList: Array<VoterData> = [
+    
+  // ]
 
 }
 
-export interface VoterData {
-  id:  number;
-  status: string;
-  name: string;
-  age: number;
-  gender: string;
-  barangay: string;
-  rating: number;  
-}
+// export interface VoterData {
+//     id:  number;
+//     clusteredPrecint: number;
+//     establishedPrecint: string;
+//     pollingPlace: string;
+//     lastName: string;
+//     firstName: string;
+//     middleName: string;
+//     age: string;
+//     registeredVoter: string;
+//     address: string;
+// }
