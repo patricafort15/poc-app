@@ -179,7 +179,6 @@ export class VoterListComponent implements OnInit {
 
     ]
 
-    
   }
 
   // public voterList: Array<VoterData> = [
