@@ -214,37 +214,61 @@
                             </div>
                             <!-- /.card-header -->
                             <div class="card-body">
-                              <input [(ngModel)]="searchText" placeholder="Search" class="advancedSearchTextbox">
-                              <table class="table table-bordered" style="text-align: center;">
-                                <thead>                  
-                                  <tr>
-                                    <th scope="col">ID</th>
-                                    <th scope="col">Clustered Precint</th>
-                                    <th scope="col">Established Precint</th>
-                                    <th scope="col">Polling Place</th>
-                                    <th scope="col">Name</th>
-                                    <th scope="col">Address</th>
-                                    <th scope="col">Age</th>
-                                    <th scope="col">Registered Voter?</th>
-                                    <th scope="col">Supporter?</th>
-                                    <th scope="col">Send a Letter</th>
-                                  </tr>
-                                </thead>
-                                <tbody>
-                                  <tr *ngFor="let voter of voterList | grdFilter: {name: searchText}; let i=index;">
-                                    <td>{{ voter.id }}</td>
-                                    <td>{{ voter.clusteredPrecint }}</td>
-                                    <td>{{ voter.establishedPrecint }}</td>
-                                    <td>{{ voter.pollingPlace}}</td>
-                                    <td>{{ voter.lastName }}, {{ voter.firstName }} {{ voter.middleName }}</td>
-                                    <td>{{ voter.address }}</td>
-                                    <td>{{ voter.age }}</td>
-                                    <td>{{ voter.registeredVoter }}</td>
-                                    <td>{{ voter.inFavor }}</td>
-                                    <td><a href="vms/letter-sample"><button type="button" class="btn btn-info">Send Letter</button></a></td>
-                                  </tr>
-                                </tbody>
-                              </table>
+                              
+                              <div class="input-group input-group-sm" style="margin-bottom: 20px;">
+                                
+                                <h5>Filter by:</h5> <select name="voters" id="voters" style="margin-right: 20px;">
+                                  <option value="all" selected>All</option>
+                                  <option value="id">ID</option>
+                                  <option value="name">Name</option>
+                                  <option value="age">Age</option>
+                                  <option value="clusteredPrecint">Clustered Precint</option>
+                                  <option value="clusteredPrecint">Established Precint</option>
+                                  <option value="clusteredPrecint">Address</option>
+                                  <option value="clusteredPrecint">Voter Status</option>
+                                </select>
+
+                                <input class="form-control form-control-lg form-control-borderless" type="search" [(ngModel)]="searchText" placeholder="Search" class="advancedSearchTextbox">
+                                <span class="input-group-btn">
+                                  <button type="button" class="btn btn-info btn-flat"><i class="fa fa-search" aria-hidden="true"></i></button>
+                                </span>
+                              </div>
+
+                              <div>
+                                <table class="table table-bordered" style="text-align: center;">
+                                  <thead>                  
+                                    <tr>
+                                      <th scope="col">ID</th>
+                                      <th scope="col">Clustered Precint</th>
+                                      <th scope="col">Established Precint</th>
+                                      <th scope="col">Polling Place</th>
+                                      <th scope="col">Name</th>
+                                      <th scope="col">Address</th>
+                                      <th scope="col">Age</th>
+                                      <th scope="col">Registered Voter?</th>
+                                      <th scope="col">Supporter?</th>
+                                      <th scope="col">Send a Letter</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr *ngFor="let voter of voterList | grdFilter: {id: searchText, clusteredPrecint: searchText, establishedPrecint: searchText,
+                                    pollingPlace: searchText, lastName: searchText, firstName: searchText, middleName: searchText, address: searchText, age: searchText,
+                                    registeredVoter: searchText, inFavor: searchText}; let i=index;">
+                                      <td>{{ voter.id }}</td>
+                                      <td>{{ voter.clusteredPrecint }}</td>
+                                      <td>{{ voter.establishedPrecint }}</td>
+                                      <td>{{ voter.pollingPlace}}</td>
+                                      <td>{{ voter.lastName }}, {{ voter.firstName }} {{ voter.middleName }}</td>
+                                      <td>{{ voter.address }}</td>
+                                      <td>{{ voter.age }}</td>
+                                      <td>{{ voter.registeredVoter }}</td>
+                                      <td>{{ voter.inFavor }}</td>
+                                      <td><a href="vms/letter-sample"><button type="button" class="btn btn-info">Send Letter</button></a></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                              
                             </div>
                             <!-- /.card-body -->
                             <div class="card-footer clearfix">

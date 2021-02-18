@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { GrdFilterPipe } from './vms/voter-list/voter.pipe'
 
 import { AppRoutingModule } from './app-routing.module';
@@ -86,7 +87,8 @@ import { VmsProfileComponent } from './vms/vms-profile/vms-profile.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

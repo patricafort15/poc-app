@@ -11,6 +11,8 @@ import { setSyntheticTrailingComments, StringLiteralLike } from 'typescript';
 export class VoterListComponent implements OnInit {
 
   public searchText : string;
+  public columns: string;
+  public headers: any;
   public voterList : any;
 
   constructor() { 
@@ -179,6 +181,8 @@ export class VoterListComponent implements OnInit {
 
     ]
 
+    this.headers = Object.keys(this.voterList[0]);
+    console.log(this.headers)
   }
 
   // public voterList: Array<VoterData> = [
