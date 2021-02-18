@@ -42,6 +42,7 @@ import { VendorTrackerComponent } from './vms/vendor-tracker/vendor-tracker.comp
 import { DonationTrackerComponent } from './vms/donation-tracker/donation-tracker.component';
 import { LetterSampleComponent } from './vms/letter-sample/letter-sample.component';
 import { VmsProfileComponent } from './vms/vms-profile/vms-profile.component';
+import { VmsAdminProfileComponent } from './vms/vms-admin-profile/vms-admin-profile.component';
 
 @NgModule({
   declarations: [
@@ -83,7 +84,8 @@ import { VmsProfileComponent } from './vms/vms-profile/vms-profile.component';
     VendorTrackerComponent,
     DonationTrackerComponent,
     LetterSampleComponent,
-    VmsProfileComponent
+    VmsProfileComponent,
+    VmsAdminProfileComponent
   ],
   imports: [
     BrowserModule,

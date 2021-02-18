@@ -36,6 +36,7 @@ import { VendorTrackerComponent } from './vms/vendor-tracker/vendor-tracker.comp
 import { DonationTrackerComponent } from './vms/donation-tracker/donation-tracker.component';
 import { LetterSampleComponent } from './vms/letter-sample/letter-sample.component';
 import { VmsProfileComponent } from './vms/vms-profile/vms-profile.component';
+import { VmsAdminProfileComponent } from './vms/vms-admin-profile/vms-admin-profile.component';
  
 const routes: Routes = [
   { path: '', redirectTo:'main', pathMatch: 'full' },
@@ -86,7 +87,8 @@ const routes: Routes = [
   { path: 'vms/vendor-tracker', component: VendorTrackerComponent},
   { path: 'vms/donation-tracker', component: DonationTrackerComponent},
   { path: 'vms/letter-sample', component: LetterSampleComponent},
-  { path: 'vms/vms-profile', component: VmsProfileComponent }
+  { path: 'vms/vms-profile', component: VmsProfileComponent },
+  { path: 'vms/vms-admin-profile', component: VmsAdminProfileComponent }
 ];
 
 @NgModule({
