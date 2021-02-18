@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Event } from 'src/app/vms/models/event.model';
 
 @Component({
   selector: 'app-vms-admin-profile',
@@ -7,9 +8,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class VmsAdminProfileComponent implements OnInit {
 
-  constructor() { }
+  public event: any;
+
+  eventName: string;
+  eventDate: string;
+  eventLocation: string;
+  eventPurpose: string;
+
+  constructor() {
+    this.event = new Event();
+    
+   }
 
   ngOnInit() {
+  }
+
+  onSubmit() : void {
+    console.log(this.event)
+    sessionStorage.setItem('Events',JSON.stringify(this.event));
+
   }
 
 }

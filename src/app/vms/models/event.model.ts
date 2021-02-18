@@ -3,4 +3,5 @@ export class Event {
     eventName: string;
     eventDate: string;
     eventLocation: string;
+    eventPurpose: string;
 }
