@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { GrdFilterPipe } from './vms/voter-list/voter.pipe'
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { GrdFilterPipe } from './vms/voter-list/voter.pipe';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -90,7 +90,8 @@ import { VmsAdminProfileComponent } from './vms/vms-admin-profile/vms-admin-prof
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

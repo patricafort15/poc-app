@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Event } from 'src/app/vms/models/event.model';
 
 @Component({
   selector: 'app-vms-profile',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class VmsProfileComponent implements OnInit {
 
-  constructor() { }
+  public event: any;
+
+  constructor() {
+    this.event = new Event;
+   }
+
 
   ngOnInit() {
+
+    
+
   }
 
 }
