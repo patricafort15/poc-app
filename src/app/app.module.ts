@@ -43,6 +43,7 @@ import { DonationTrackerComponent } from './vms/donation-tracker/donation-tracke
 import { LetterSampleComponent } from './vms/letter-sample/letter-sample.component';
 import { VmsProfileComponent } from './vms/vms-profile/vms-profile.component';
 import { VmsAdminProfileComponent } from './vms/vms-admin-profile/vms-admin-profile.component';
+import { EphDashboardComponent } from './eph/eph-dashboard/eph-dashboard.component';
 
 @NgModule({
   declarations: [
@@ -85,7 +86,8 @@ import { VmsAdminProfileComponent } from './vms/vms-admin-profile/vms-admin-prof
     DonationTrackerComponent,
     LetterSampleComponent,
     VmsProfileComponent,
-    VmsAdminProfileComponent
+    VmsAdminProfileComponent,
+    EphDashboardComponent
   ],
   imports: [
     BrowserModule,

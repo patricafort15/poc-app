@@ -1,0 +1,107 @@
+// .layout-navbar-fixed .wrapper .main-header {
+//     margin: 0 0 250 0 !important;
+// }
+
+.body {
+    background-color: #343a40;
+}
+.push-menu {
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .push-menu {
+        display: block;
+    }
+  }
+
+
+.layout-navbar-fixed .wrapper .content-wrapper {
+    margin-left: 0 !important;
+}
+
+.layout-navbar-fixed .wrapper .content-wrapper {
+    margin-top: 0px !important;
+}
+
+.content-wrapper {
+    margin-left: 0 !important;
+    overflow: hidden;
+    background-color: #343a40;
+    margin-bottom: 0px;
+}
+
+.card-dark {
+    background-color: #696969;
+    color: white;
+    border-radius: 0 0 0 0;
+}
+
+.live-card {
+    height: 500px;
+    width: 900px;
+    margin-left: 30px;
+}
+
+.all-games {
+    margin-top: 200px;
+}
+
+.content {
+    margin-top: 30px;
+    background-color: #343a40;
+    margin-bottom: 0px;
+}
+
+.container {
+    
+    background-color: #343a40;
+    margin-bottom: 0px;
+    margin-left: 210px;
+}
+
+.main-header {
+    border-bottom: 0px solid #006600;
+    box-shadow: 0 4px 25px 1px rgb(133 133 133 / 20%);
+}
+.main-sidebar {
+    z-index: 1;
+    background-color: #343b40;
+    // width: 300px;
+}
+
+.main-footer {
+    border-top: 0px solid #006600;
+    margin-left: 0 !important;
+    background-color: #343a40;
+    z-index: -2;
+    font-size: 11;
+}
+
+.modal {
+    padding-top: 150px;
+}
+
+.close {
+    color: #ffff;
+}
+.modal-header {
+    color: white;
+    background-color: #343a40;
+    border-bottom: 1px solid #f2a154;
+}
+
+.modal-body {
+    color: #ffff;
+    background-color: #343a40;
+}
+
+.modal-footer {
+    color: white;
+    background-color: #343a40;
+    border-top: 1px solid #f2a154;
+}
+
+.user-panel {
+    border-bottom: 1px solid #f2a154;
+}

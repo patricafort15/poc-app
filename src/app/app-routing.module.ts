@@ -37,6 +37,7 @@ import { DonationTrackerComponent } from './vms/donation-tracker/donation-tracke
 import { LetterSampleComponent } from './vms/letter-sample/letter-sample.component';
 import { VmsProfileComponent } from './vms/vms-profile/vms-profile.component';
 import { VmsAdminProfileComponent } from './vms/vms-admin-profile/vms-admin-profile.component';
+import { EphDashboardComponent } from './eph/eph-dashboard/eph-dashboard.component';
  
 const routes: Routes = [
   { path: '', redirectTo:'main', pathMatch: 'full' },
@@ -88,7 +89,10 @@ const routes: Routes = [
   { path: 'vms/donation-tracker', component: DonationTrackerComponent},
   { path: 'vms/letter-sample', component: LetterSampleComponent},
   { path: 'vms/vms-profile', component: VmsProfileComponent },
-  { path: 'vms/vms-admin-profile', component: VmsAdminProfileComponent }
+  { path: 'vms/vms-admin-profile', component: VmsAdminProfileComponent },
+
+  // EPH
+  { path: 'eph', component: EphDashboardComponent }
 ];
 
 @NgModule({
