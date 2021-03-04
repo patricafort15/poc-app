@@ -8,10 +8,32 @@
 .push-menu {
     display: none;
 }
+.live-card {
+    height: 400px;
+    width: 900px;
+    margin-left: 30px;
+}
+
+.nav-item {
+    .active {
+        background-color:#f2a154;
+        border: 2px #f2a154;
+        color: black;
+    }
+}
 
 @media only screen and (max-width: 600px) {
     .push-menu {
         display: block;
+    }
+    .live-card{
+        height: auto;
+        width: auto;
+        margin-left: -220px;
+        iframe {
+            height: fit-content;
+            width: fit-content;
+        }
     }
   }
 
@@ -37,11 +59,9 @@
     border-radius: 0 0 0 0;
 }
 
-.live-card {
-    height: 500px;
-    width: 900px;
-    margin-left: 30px;
-}
+
+
+
 
 .all-games {
     margin-top: 200px;
